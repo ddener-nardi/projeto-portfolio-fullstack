@@ -1,0 +1,51 @@
+.projSwiper{
+    position: relative;
+    &::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        width: 50px;
+        background-image: linear-gradient(to right, $background-sec-nav, $background-sec-nav, transparent);
+        z-index: 2;
+        
+    }
+    &::after{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        width: 50px;
+        background-image: linear-gradient(to left, $background-sec-nav, $background-sec-nav, transparent);
+        z-index: 2;
+    }
+}
+.projects-card{
+    width: 100%;
+    max-width: 340px;
+    height: 468px;
+    background-color: rgba(0, 0, 0, 0.328);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    .card-img{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        img{
+            border-radius: 15px;
+            height: 200px;
+            width: 100%;
+        }
+    }
+    .card-info{
+        padding: 10px;
+        p{
+            color: $color-nav;
+        }
+    }
+}

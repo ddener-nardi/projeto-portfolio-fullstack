@@ -21,13 +21,14 @@
         <nav class="d-flex justify-content-center">
             <div class="navigation mw-1390 w-100 d-flex align-items-center justify-content-between">
                 <div class="logo">
-                    <a href="#"><span>Freiheit</span></a>
+                    <a href="#"><span>Freiheit.</span></a>
                 </div>
                 <div class="navbar-container">
                     <ul class="d-flex list-unstyled mb-0">
-                        <li><a href="#">Quem sou Eu.</a></li>
-                        <li><a href="#">Meus Projetos.</a></li>
-                        <li><a href="#">Minhas Redes.</a></li>
+                        <li><a href="#">Quem sou Eu;</a></li>
+                        <li><a href="#">Meus Projetos;</a></li>
+                        <li><a href="#">Minhas Redes;</a></li>
+                        <li><a href="#">Entre em contato.</a></li>
                     </ul>
                 </div>
                 <div class="nav-search-bar">

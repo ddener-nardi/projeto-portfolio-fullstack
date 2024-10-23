@@ -3,7 +3,7 @@
 }
 .main-container{
     width: 100%;
-    height: 100vh;
+    height: 650px;
 }
 .main-container-wrapper{
     h1{
@@ -11,5 +11,9 @@
         font-size: 68px;
         color: $color-nav;
         margin-top: 100px;
+    }
+    p{
+        font-size: 20px;
+        color: $color-nav;
     }
 }
