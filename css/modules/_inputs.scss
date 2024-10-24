@@ -31,3 +31,21 @@
         color: $color-nav;
     }
 }
+.projects-form{
+    .contact-checkbox{
+        align-items: center;
+        label{
+            color: black;
+        }
+    }
+    .select-input{
+        select{
+            width: 200px;
+            height: 35px;
+            padding: 5px 10px;
+            background-color: black;
+            color: $color-nav;
+            border: none;
+        }
+    }
+}

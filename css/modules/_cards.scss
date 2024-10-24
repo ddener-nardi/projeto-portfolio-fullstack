@@ -49,3 +49,32 @@
         }
     }
 }
+.projects-post{
+    border: 1px solid $color-nav;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.314);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 8px black;
+    overflow: hidden;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 10px rgb(247, 247, 247);
+    }
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    p{
+        color: $color-nav;
+        margin: 5px 5px;
+        font-weight: 600;
+    }
+    a{
+        text-align: end;
+        color: black;
+        margin-left: 179px;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}

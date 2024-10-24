@@ -26,7 +26,7 @@
                 <div class="navbar-container">
                     <ul class="d-flex list-unstyled mb-0">
                         <li><a href="<?php $BASE_URL ?>index.php">Quem sou Eu;</a></li>
-                        <li><a href="<?php $BASE_URL ?>index.php">Meus Projetos;</a></li>
+                        <li><a href="<?php $BASE_URL ?>projetos.php">Meus Projetos;</a></li>
                         <li><a href="<?php $BASE_URL ?>index.php">Minhas Redes;</a></li>
                         <li><a href="<?php $BASE_URL ?>contato.php">Entre em contato.</a></li>
                     </ul>
