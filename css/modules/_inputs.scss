@@ -1,0 +1,33 @@
+.inputs-contact-page{
+    .contact-input{
+        label{
+            color: $color-nav;
+            margin-bottom: 5px;
+        }
+        input{
+            padding: 0 10px;
+            height: 46px;
+        }
+    }
+}
+
+.contact-textarea{
+    height: 100%;
+    label{
+        color: $color-nav;
+        margin-bottom: 5px;
+    }
+    textarea{
+        padding: 10px;
+        height: 100%;
+    }
+}
+.contact-checkbox{
+    input{
+        width: 20px;
+        height: 20px;
+    }
+    label{
+        color: $color-nav;
+    }
+}
