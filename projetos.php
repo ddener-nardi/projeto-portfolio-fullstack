@@ -2,7 +2,8 @@
     include_once("templates/header.php");
     
     $search = filter_input(INPUT_GET, "search");
-    $projetos = getProjects($conn);
+    // $projetos = getProjects($conn);
+    $projetos = findByTitle($conn, $search)
 ?>
 <main class="projects-main">
     <div class="container-xl">

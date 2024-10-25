@@ -19,7 +19,17 @@
         return $stmt->fetchAll();
     }
 
-    function getSearch(){
-        
+    function findByTitle($connection, $nome){
+        $projetos = [];
+
+        $query = "SELECT * FROM projetos WHERE nome_projeto LIKE :nome_projeto";
+
+        $stmt = $connection->prepare($query);
+
+        $stmt -> bindValue(":nome_projeto", '%' .$nome. '%');
+
+        $stmt -> execute();
+
+        return $stmt->fetchAll();
     }
 ?>
