@@ -1,5 +1,9 @@
 <?php 
     include_once("config/url.php");
+    include_once("config/connection.php");
+    include_once("config/process.php");
+
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,11 +36,12 @@
                     </ul>
                 </div>
                 <div class="nav-search-bar">
-                    <form action="">
+                    <form action="<?php $BASE_URL ?>projetos.php" method="get">
+                        <input type="hidden" name="type" value="search">
                         <div class="nav-search-form">
                             <label for="search"></label>
                             <input type="text" name="search" id="search" placeholder="O que você procura?">
-                            <button><i class="bi bi-search"></i></button>
+                            <button type="submit"><i class="bi bi-search"></i></button>
                         </div>
                     </form>
                 </div>

@@ -1,4 +1,9 @@
-<?php include_once("templates/header.php") ?>
+<?php 
+    include_once("templates/header.php");
+    
+    $search = filter_input(INPUT_GET, "search");
+    $projetos = getProjects($conn);
+?>
 <main class="projects-main">
     <div class="container-xl">
         <div class="row">
@@ -7,7 +12,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4">Você buscou por ""</div>
+            <div class="col-4">Você buscou por "<?=$search?>"</div>
         </div>
         <div class="row">
             <div class="col-6">Veja o que foi encontrado!</div>
@@ -42,20 +47,25 @@
     </div>
     <div class="container-xl mt-5">
         <div class="row">
-            <div class="col-3">
-                <div class="projects-post">
-                    <div class="projects-post-img">
-                        <img src="<?= $BASE_URL ?>imgs/test-proj.png">
-                    </div>
-                    <div class="projects-post-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dolores eveniet omnis veniam explicabo, accusantium rerum qui repellat voluptatibus iste optio? Voluptates magni ad impedit.</p>
-                        <a href="#">
-                            Saiba mais
-                            <i class="bi bi-plus-lg"></i>
-                        </a>
-                    </div>
+            <?php foreach ($projetos as $projeto): ?>
+                <div class="col-3">
+                    <a href="<?php $BASE_URL ?>single-proj.php?id=<?= $projeto["id"] ?>">
+                        <div class="projects-post">
+                            <div class="projects-post-img position-relative">
+                                <img src="<?=$projeto['imagem']?>">
+                                <span class="project-name"><?=$projeto['nome_projeto']?></span>
+                            </div>
+                            <div class="projects-post-desc">
+                                <p><?=$projeto['descricao']?></p>
+                                <a href="<?php $BASE_URL ?>single-proj.php?id=<?= $projeto["id"] ?>">
+                                    Saiba mais
+                                    <i class="bi bi-plus-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </main>
